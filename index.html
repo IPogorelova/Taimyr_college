@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/bitrix/templates/modern_blue_ru/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Serif+Caption:400,400italic&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="/ajax/libs/jquery/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="факультеты, специальность, преподаватели" />
+    <meta name="description" content="Сегодня Современный Государственный Университет - это один из самых крупных многопрофильных вузов Поволжья, обеспечивающий формирование интеллектуального потенциала и способствующий социально-экономическому развитию региона." />
+    <link href="bitrix/cache/css/kernel_main/kernel_main.css" type="text/css" rel="stylesheet" />
+    <link href="bitrix/cache/css/template/template_styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'ru','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1539259402','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'c3576b24129128a467d3c7506316dca8'});</script>
+
+
+    <script type="text/javascript"  src="/bitrix/cache/js/kernel_main/kernel_main.js"></script>
+    <script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/utils.js','/bitrix/js/main/core/core_tooltip.js','/bitrix/templates/modern_blue_ru/js/jquery.formstyler.min.js','/bitrix/templates/modern_blue_ru/js/jquery.magnificpopup.min.js','/bitrix/templates/modern_blue_ru/js/jquery.cookie.min.js','/bitrix/templates/modern_blue_ru/js/jquery.matchHeight-min.js','/bitrix/templates/modern_blue_ru/js/jquery.mobileNav.js','/bitrix/templates/modern_blue_ru/js/owl.carousel.min.js','/bitrix/templates/modern_blue_ru/js/perfect-scrollbar.jquery.min.js','/bitrix/templates/modern_blue_ru/js/main.js','/bitrix/templates/modern_blue_ru/js/special_version.js','/bitrix/components/bitrix/search.title/script.js']); </script>
+    <script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/bitrix/js/main/core/css/core_tooltip.css','/bitrix/templates/modern_blue_ru/components/bitrix/search.title/modern_search/style.css','/bitrix/templates/modern_blue_ru/template_styles.css','/bitrix/templates/modern_blue_ru/special_version.css']); </script>
+    <script type="text/javascript">
+        (function () {
+            "use strict";
+
+            var counter = function ()
+            {
+                var cookie = (function (name) {
+                    var parts = ("; " + document.cookie).split("; " + name + "=");
+                    if (parts.length == 2) {
+                        try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+                        catch (e) {}
+                    }
+                })("BITRIX_CONVERSION_CONTEXT_ru");
+
+                if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+                    return;
+
+                var request = new XMLHttpRequest();
+                request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+                request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                request.send(
+                    "SITE_ID="+encodeURIComponent("ru")+
+                    "&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+                    "&HTTP_REFERER="+encodeURIComponent(document.referrer)
+                );
+            };
+
+            if (window.frameRequestStart === true)
+                BX.addCustomEvent("onFrameDataReceived", counter);
+            else
+                BX.ready(counter);
+        })();
+    </script>
+
+
+
+    <script type="text/javascript"  src="/bitrix/cache/js/template/template.js?1534338585128666"></script>
+    <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "297fc870cd385193489bef96a0fa2aae"]); _ba.push(["host", "edudemo.1c-bitrix.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+</head>
+
+<body>
+<div class="mb-hide"></div>
+<div class="body-wrapper clearfix">
+    <div class="special-settings">
+        <div class="container special-panel-container">
+            <div class="content">
+                <div class="aa-block aaFontsize">
+                    <div class="fl-l">Размер:</div>
+                    <a class="aaFontsize-small" data-aa-fontsize="small" href="#" title="Уменьшенный размер шрифта">A</a>
+                    <a class="aaFontsize-normal a-current" href="#" data-aa-fontsize="normal" title="Нормальный размер шрифта">A</a>
+                    <a class="aaFontsize-big" data-aa-fontsize="big" href="#" title="Увеличенный размер шрифта">A</a>
+                </div>
+                <div class="aa-block aaColor">
+                    Цвет:
+                    <a class="aaColor-black a-current" data-aa-color="black" href="#" title="Черным по белому"><span>C</span></a>
+                    <a class="aaColor-yellow" data-aa-color="yellow" href="#" title="Желтым по черному"><span>C</span></a>
+                    <a class="aaColor-blue" data-aa-color="blue" href="#" title="Синим по голубому"><span>C</span></a>
+                </div>
+
+                <div class="aa-block aaImage">
+                    Изображения
+                    <span class="aaImage-wrapper">
+					<a class="aaImage-on a-current" data-aa-image="on" href="#">Вкл.</a>
+					<a class="aaImage-off" data-aa-image="off" href="#">Выкл.</a>
+				</span>
+                </div>
+                <span class="aa-block"><a href="/?set-aa=normal" data-aa-off><i class="icon icon-special-version"></i> Обычная версия сайта</a></span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container container-top-header">
+            <div class="content">
+                <div class="col col-mb-12">
+					<span class="mb-hide">
+						<a href="#" id="geotag">
+                            <!-- <img src="photos/icons/pin-sharp-circle-624.svg" class="icon icon-map-marker"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20">
+                                <path fill-rule="evenodd" d="M9 7.219a2 2 0 1 1-3.999.001A2 2 0 0 1 9 7.22M7 17S2 10 2 7c0-2.757 2.243-5 5-5s5 2.243 5 5c0 3-5 10-5 10M7 0a7 7 0 0 0-7 7c0 3.866 7 13 7 13s7-9.134 7-13a7 7 0 0 0-7-7"/>
+                            </svg>
+                            Посмотрите, где мы находимся</a>
+						<span class="aa-hide" id="invalid" itemprop="Copy"><a class="fl-r" href="/?set-aa=special" data-aa-on title="Aa">
+                            <span class="hide">Версия для слабовидящих  </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="21" viewBox="0 0 35 21">
+                                <path fill-rule="evenodd" d="M6.539 21H0v-.855a11.19 11.19 0 0 1 2.12-.708L9.573 0h.854l7.452 19.437c.393.078.78.167 1.163.265a4.13 4.13 0 0 1 1.075.443V21h-7.54v-.855a12.47 12.47 0 0 1 1.208-.413c.412-.118.815-.217 1.208-.295l-2.003-5.398h-7.04l-1.943 5.398c.824.118 1.669.354 2.533.708V21zm0-8.494h5.95L10.16 6.253l-.56-2.537h-.058l-.737 2.596-2.267 6.194zM25.949 21h-4.36v-.57a7.46 7.46 0 0 1 1.414-.472L27.97 7h.569l4.968 12.958c.262.052.52.111.775.177.256.065.494.164.717.295V21h-5.027v-.57c.262-.105.53-.197.805-.276.275-.078.544-.144.805-.196l-1.335-3.598h-4.693l-1.296 3.598c.55.079 1.113.236 1.69.472V21zm0-5.663h3.965l-1.55-4.168-.374-1.691h-.04l-.49 1.73-1.512 4.13z"/>
+                            </svg></a>
+                        </span>
+					</span>
+                    <span class="tablet-hide dt-hide ld-hide">
+						<span class="aa-hide" itemprop="Copy"><a class="fl-r mr50" href="/?set-aa=special" data-aa-on><i class="icon icon-special-version"></i><span class="hide">Версия для слабовидящих</span></a></span>
+					</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ornament-top"></div>
+
+        <div class="container container-white pt10 pb10">
+            <div class="content logo-line">
+                <div class="col col-mb-12 col-12 col-dt-7">
+                    <div class="logo-block">
+                        <a href="#" class="logo"><img src="photos/taimyr-logo.svg"/></a>
+                    </div>
+                </div>
+                <div class="col col-mb-12 col-12 col-dt-5">
+                    <div class="header-info-block mb-hide">
+                        <img src="photos/icons/time-icon.svg">
+                        <div class="ov-h">
+                            <a href="#">Приёмная комиссия </a>
+                            <br>9:00 до 20:00, Пн-Пт        </div>
+                    </div>
+                    <div class="header-info-block">
+                        <img src="photos/icons/phone-icon.svg">
+                        <div class="ov-h">
+                            +7 (495) 229-14-41            <p class="tablet-hide dt-hide ld-hide"><a href="/about_the_university/offices/358/">Приёмная комиссия </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-top-navigation">
+            <div class="content">
+                <div class="col col-mb-hide col-12">
+                    <div class="top-nav-block">
+
+                        <ul>
+                            <li class="parent">
+                                <a tabindex="1" href="#">О ВУЗе</a>
+                                <div class="second-level container">
+                                    <div class="content">
+                                        <div class="col col-mb-12">
+                                            <div class="content">
+                                                <ul class="clearfix">
+                                                    <li><a href="#">Сведения об образовательном учреждении</a></li>
+                                                    <li><a href="#">Факультеты</a></li>
+                                                    <li><a href="#">Филиалы</a></li>
+                                                    <li><a href="#">Ученый совет</a></li>
+                                                    <li><a href="#">Структура</a></li>
+                                                    <li><a href="#">Руководство</a></li>
+                                                    <li><a href="#">Преподаватели и сотрудники</a></li>
+                                                    <li><a href="#">История</a></li>
+                                                    <li><a href="#">Устав</a></li>
+                                                    <li><a href="#">Библиотека</a></li>
+                                                    <li><a href="#">Новости</a></li>
+                                                    <li><a href="#">Объявления</a></li>
+                                                    <li><a href="#">Лицензии</a></li>
+                                                    <li><a href="#">Контакты</a></li>
+                                                    <li><a href="#">Видеогалерея</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="parent">
+                                <a tabindex="1" href="#">Абитуриентам</a>
+                                <div class="second-level container">
+                                    <div class="content">
+                                        <div class="col col-mb-12">
+                                            <div class="content">
+                                                <ul class="clearfix">
+                                                    <li><a href="#">Приемная комиссия</a></li>
+                                                    <li><a href="#">Документы и справки</a></li>
+                                                    <li><a href="#">Специальности и направления</a></li>
+                                                    <li><a href="#">Стоимость</a></li>
+                                                    <li><a href="#">Подготовительные курсы</a></li>
+                                                    <li><a href="#">Правила и условия приема</a></li>
+                                                    <li><a href="#">Общежитие</a></li>
+                                                    <li><a href="#">Студенческая жизнь</a></li>
+                                                    <li><a href="#">Фото-экскурсия</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="parent">
+                                <a tabindex="1" href="/students/">Студентам</a>
+                                <div class="second-level container">
+                                    <div class="content">
+                                        <div class="col col-mb-12">
+                                            <div class="content">
+                                                <ul class="clearfix">
+                                                    <li><a href="#">Учебные материалы</a></li>
+                                                    <li><a href="#">Оплата обучения</a></li>
+                                                    <li><a href="#">Документы и справки</a></li>
+                                                    <li><a href="#">Студенческая жизнь</a></li>
+                                                    <li><a href="#">Научная жизнь</a></li>
+                                                    <li><a href="#">Спортивная жизнь</a></li>
+                                                    <li><a href="#">Социальная сфера</a></li>
+                                                    <li><a href="#">Международная деятельность</a></li>
+                                                    <li><a href="#">Иностранным студентам</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="parent">
+                                <a tabindex="1" href="#">Выпускникам</a>
+                                <div class="second-level container">
+                                    <div class="content">
+                                        <div class="col col-mb-12">
+                                            <div class="content">
+                                                <ul class="clearfix">
+                                                    <li><a href="#">Центр содействия занятости</a></li>
+                                                    <li><a href="#">Совет молодых ученых</a></li>
+                                                    <li><a href="#">Ассоциация выпускников</a></li>
+                                                    <li><a href="#">Форумы</a></li>
+                                                    <li><a href="#">Отзывы выпускников</a></li>
+                                                    <li><a href="/graduates/seminars_and_trainings/#">Семинары и тренинги</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-block fl-r">
+                        <div class="search-button" tabindex="1"><i class="icon icon-search"></i></div>
+                        <div class="container container-search">
+                            <div class="content">
+                                <div class="col col-mb-12" id="searchTitle">
+                                    <form action="/search/index.php">
+                                        <div class="search-form-block">
+                                            <i class="icon icon-search-white"></i>
+                                            <div class="search-close-button" tabindex="1"><i class="icon icon-close"></i></div>
+                                            <div class="ov-h">
+                                                <input id="title-search-input" class="search-input" type="text" name="q" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="search-suggestions">
+                                    </div>
+                                </div> <!-- .col col-mb-12 -->
+                            </div> <!-- .content -->
+                        </div> <!-- .container container-search -->
+                    </div>
+                    <script>
+
+                        function JCTitleSearchModern(arParams)
+                        {
+                            var _this = this;
+
+                            this.arParams = {
+                                'AJAX_PAGE': arParams.AJAX_PAGE,
+                                'CONTAINER_ID': arParams.CONTAINER_ID,
+                                'INPUT_ID': arParams.INPUT_ID,
+                                'MIN_QUERY_LEN': parseInt(arParams.MIN_QUERY_LEN)
+                            };
+                            if(arParams.WAIT_IMAGE)
+                                this.arParams.WAIT_IMAGE = arParams.WAIT_IMAGE;
+                            if(arParams.MIN_QUERY_LEN <= 0)
+                                arParams.MIN_QUERY_LEN = 1;
+
+                            this.cache = [];
+                            this.cache_key = null;
+
+                            this.startText = '';
+                            this.currentRow = -1;
+                            this.RESULT = null;
+                            this.CONTAINER = null;
+                            this.INPUT = null;
+                            this.WAIT = null;
+
+                            this.ShowResult = function(result)
+                            {
+                                var suggestions = document.getElementsByClassName('search-suggestions');
+                                suggestions[0].innerHTML = result;
+                            }
+
+                            this.onKeyPress = function(keyCode)
+                            {
+                                var tbl = BX.findChild(_this.RESULT, {'tag':'div','class':'search-result'}, true);
+                                if(!tbl)
+                                    return false;
+
+                                var cnt = tbl.rows.length;
+
+                                switch (keyCode)
+                                {
+                                    case 27: // escape key - close search div
+                                        _this.RESULT.style.display = 'none';
+                                        _this.currentRow = -1;
+                                        _this.UnSelectAll();
+                                        return true;
+
+                                    case 40: // down key - navigate down on search results
+                                        if(_this.RESULT.style.display == 'none')
+                                            _this.RESULT.style.display = 'block';
+
+                                        var first = -1;
+                                        for(var i = 0; i < cnt; i++)
+                                        {
+                                            if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+                                            {
+                                                if(first == -1)
+                                                    first = i;
+
+                                                if(_this.currentRow < i)
+                                                {
+                                                    _this.currentRow = i;
+                                                    break;
+                                                }
+                                                else if(tbl.rows[i].className == 'title-search-selected')
+                                                {
+                                                    tbl.rows[i].className = '';
+                                                }
+                                            }
+                                        }
+
+                                        if(i == cnt && _this.currentRow != i)
+                                            _this.currentRow = first;
+
+                                        tbl.rows[_this.currentRow].className = 'title-search-selected';
+                                        return true;
+
+                                    case 38: // up key - navigate up on search results
+                                        if(_this.RESULT.style.display == 'none')
+                                            _this.RESULT.style.display = 'block';
+
+                                        var last = -1;
+                                        for(var i = cnt-1; i >= 0; i--)
+                                        {
+                                            if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+                                            {
+                                                if(last == -1)
+                                                    last = i;
+
+                                                if(_this.currentRow > i)
+                                                {
+                                                    _this.currentRow = i;
+                                                    break;
+                                                }
+                                                else if(tbl.rows[i].className == 'title-search-selected')
+                                                {
+                                                    tbl.rows[i].className = '';
+                                                }
+                                            }
+                                        }
+
+                                        if(i < 0 && _this.currentRow != i)
+                                            _this.currentRow = last;
+
+                                        tbl.rows[_this.currentRow].className = 'title-search-selected';
+                                        return true;
+
+                                    case 13: // enter key - choose current search result
+                                        if(_this.RESULT.style.display == 'block')
+                                        {
+                                            for(var i = 0; i < cnt; i++)
+                                            {
+                                                if(_this.currentRow == i)
+                                                {
+                                                    if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+                                                    {
+                                                        var a = BX.findChild(tbl.rows[i], {'tag':'a'}, true);
+                                                        if(a)
+                                                        {
+                                                            window.location = a.href;
+                                                            return true;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        return false;
+                                }
+
+                                return false;
+                            };
+
+                            this.onTimeout = function()
+                            {
+                                _this.onChange(function(){
+                                    setTimeout(_this.onTimeout, 500);
+                                });
+                            };
+
+                            this.onChange = function(callback)
+                            {
+                                if(_this.INPUT.value != _this.oldValue && _this.INPUT.value != _this.startText)
+                                {
+                                    _this.oldValue = _this.INPUT.value;
+                                    if(_this.INPUT.value.length >= _this.arParams.MIN_QUERY_LEN)
+                                    {
+                                        _this.cache_key = _this.arParams.INPUT_ID + '|' + _this.INPUT.value;
+                                        if(_this.cache[_this.cache_key] == null)
+                                        {
+                                            if(_this.WAIT)
+                                            {
+                                                var pos = BX.pos(_this.INPUT);
+                                                var height = (pos.bottom - pos.top)-2;
+                                                _this.WAIT.style.top = (pos.top+1) + 'px';
+                                                _this.WAIT.style.height = height + 'px';
+                                                _this.WAIT.style.width = height + 'px';
+                                                _this.WAIT.style.left = (pos.right - height + 2) + 'px';
+                                                _this.WAIT.style.display = 'block';
+                                            }
+
+                                            BX.ajax.post(
+                                                _this.arParams.AJAX_PAGE,
+                                                {
+                                                    'ajax_call':'y',
+                                                    'INPUT_ID':_this.arParams.INPUT_ID,
+                                                    'q':_this.INPUT.value,
+                                                    'l':_this.arParams.MIN_QUERY_LEN
+                                                },
+                                                function(result)
+                                                {
+                                                    _this.cache[_this.cache_key] = result;
+                                                    _this.ShowResult(result);
+                                                    _this.currentRow = -1;
+                                                    _this.EnableMouseEvents();
+                                                    if(_this.WAIT)
+                                                        _this.WAIT.style.display = 'none';
+                                                    if (!!callback)
+                                                        callback();
+                                                }
+                                            );
+                                            return;
+                                        }
+                                        else
+                                        {
+                                            _this.ShowResult(_this.cache[_this.cache_key]);
+                                            _this.currentRow = -1;
+                                            _this.EnableMouseEvents();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        _this.RESULT.style.display = 'none';
+                                        _this.currentRow = -1;
+                                        _this.UnSelectAll();
+                                    }
+                                }
+                                if (!!callback)
+                                    callback();
+                            };
+
+                            this.UnSelectAll = function()
+                            {
+                                var tbl = BX.findChild(_this.RESULT, {'tag':'div','class':'search-result'}, true);
+                                if(tbl)
+                                {
+                                    var cnt = tbl.rows.length;
+                                    for(var i = 0; i < cnt; i++)
+                                        tbl.rows[i].className = '';
+                                }
+                            };
+
+                            this.EnableMouseEvents = function()
+                            {
+                                var tbl = BX.findChild(_this.RESULT, {'tag':'div','class':'search-result'}, true);
+                                if(tbl)
+                                {
+                                    var cnt = tbl.rows.length;
+                                    for(var i = 0; i < cnt; i++)
+                                        if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+                                        {
+                                            tbl.rows[i].id = 'row_' + i;
+                                            tbl.rows[i].onmouseover = function (e) {
+                                                if(_this.currentRow != this.id.substr(4))
+                                                {
+                                                    _this.UnSelectAll();
+                                                    this.className = 'title-search-selected';
+                                                    _this.currentRow = this.id.substr(4);
+                                                }
+                                            };
+                                            tbl.rows[i].onmouseout = function (e) {
+                                                this.className = '';
+                                                _this.currentRow = -1;
+                                            };
+                                        }
+                                }
+                            };
+
+                            this.onFocusLost = function(hide)
+                            {
+                                setTimeout(function(){_this.RESULT.style.display = 'none';}, 250);
+                            };
+
+                            this.onFocusGain = function()
+                            {
+                                if(_this.RESULT.innerHTML.length)
+                                    _this.ShowResult();
+                            };
+
+                            this.onKeyDown = function(e)
+                            {
+                                if(!e)
+                                    e = window.event;
+
+                                if (_this.RESULT.style.display == 'block')
+                                {
+                                    if(_this.onKeyPress(e.keyCode))
+                                        return BX.PreventDefault(e);
+                                }
+                            };
+
+                            this.Init = function()
+                            {
+                                this.CONTAINER = document.getElementById(this.arParams.CONTAINER_ID);
+                                this.RESULT = document.body.appendChild(document.createElement("DIV"));
+                                this.RESULT.className = 'search-suggestions';
+                                this.INPUT = document.getElementById(this.arParams.INPUT_ID);
+                                this.startText = this.oldValue = this.INPUT.value;
+                                BX.bind(this.INPUT, 'focus', function() {_this.onFocusGain()});
+                                BX.bind(this.INPUT, 'blur', function() {_this.onFocusLost()});
+
+                                if(BX.browser.IsSafari() || BX.browser.IsIE())
+                                    this.INPUT.onkeydown = this.onKeyDown;
+                                else
+                                    this.INPUT.onkeypress = this.onKeyDown;
+
+                                if(this.arParams.WAIT_IMAGE)
+                                {
+                                    this.WAIT = document.body.appendChild(document.createElement("DIV"));
+                                    this.WAIT.style.backgroundImage = "url('" + this.arParams.WAIT_IMAGE + "')";
+                                    if(!BX.browser.IsIE())
+                                        this.WAIT.style.backgroundRepeat = 'none';
+                                    this.WAIT.style.display = 'none';
+                                    this.WAIT.style.position = 'absolute';
+                                    this.WAIT.style.zIndex = '1100';
+                                }
+
+                                BX.bind(this.INPUT, 'bxchange', function() {_this.onChange()});
+                            };
+
+                            BX.ready(function (){_this.Init(arParams)});
+                        }
+
+                        BX.ready(function(){
+                            new JCTitleSearchModern({
+                                'AJAX_PAGE' : '/',
+                                'CONTAINER_ID': 'searchTitle',
+                                'INPUT_ID': 'title-search-input',
+                                'MIN_QUERY_LEN': 2
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="big-slider" data-owl-loop="n" data-owl-autoplay="y" data-owl-autoplay-timeout="8">
+            <div class="slider-item" style="background-image: url(/upload/iblock/a11/a11dfb68936be233c7ddb845ace00904.jpg);" id="bx_651765591_482">
+                <div class="content">
+                    <div class="col col-mb-12 col-7 col-dt-5">
+                        <div class="slider-item-text">
+                            <div class="h1">Добро пожаловать в СГУ!</div>
+                            <div class="mb-hide slider-item-description">Современный государственный университет&nbsp;&nbsp;СГУ – это&nbsp;&nbsp;вуз, который совмещает в себе лучшие образовательные технологии, высококвалифицированных преподавателей&nbsp;&nbsp;и творческую атмосферу.<br />
+                            </div>
+                            <div class="big-slider-nav mb-hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" style="background-image: url(/upload/iblock/b03/b03708b44ad289270ce11755bc97edfb.jpg);" id="bx_651765591_481">
+                <div class="content">
+                    <div class="col col-mb-12 col-7 col-dt-5">
+                        <div class="slider-item-text">
+                            <div class="h1">Творческие коллективы СГУ</div>
+                            <div class="mb-hide slider-item-description">Открыт новый набор! Успей записаться пока есть места!</div>
+                            <div class="big-slider-nav mb-hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" style="background-image: url(/upload/iblock/95c/95c08ebb5adfeb179bb8de39c38189c6.jpg);" id="bx_651765591_483">
+                <div class="content">
+                    <div class="col col-mb-12 col-7 col-dt-5">
+                        <div class="slider-item-text">
+                            <div class="h1">Подготовительные курсы</div>
+                            <div class="mb-hide slider-item-description">Полная подготовка к ЕГЭ. Записаться можно в любое время!</div>
+                            <div class="big-slider-nav mb-hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-m50">
+        <div class="content">
+            <div class="col col-mb-12 col-4 col-margin">
+                <div class="white-box primary-border-box big-padding-box">
+                    <h2 class="mt0"><img src="/bitrix/templates/modern_blue_ru/images/abiturients.png" alt="Абитуриентам"> Абитуриентам</h2>
+
+                    <ul class="unstyled">
+                        <li><a href="#">Приемная комиссия</a></li>
+                        <li><a href="#">Документы и справки</a></li>
+                        <li><a href="#">Найти филиал ближе к дому</a></li>
+                    </ul>
+                    <a href="#" class="btn col-margin-top btn-long">Подробнее</a>
+                </div> <!-- .white-box primary-border-box big-padding-box -->
+            </div> <!-- .col col-mb-12 col-4 col-margin -->
+
+            <div class="col col-mb-12 col-4 col-margin">
+                <div class="white-box primary-border-box big-padding-box">
+                    <h2 class="mt0"><img src="/bitrix/templates/modern_blue_ru/images/students.png" alt="Студентам"> Студентам</h2>
+
+                    <ul class="unstyled">
+                        <li><a href="#">Оплата обучения</a></li>
+                        <li><a href="#">Учебные материалы</a></li>
+                        <li><a href="#">Студенческая жизнь</a></li>
+                    </ul>
+                    <a href="#" class="btn col-margin-top btn-long">Подробнее</a>
+                </div> <!-- .white-box primary-border-box big-padding-box -->
+            </div> <!-- .col col-mb-12 col-4 col-margin -->
+
+            <div class="col col-mb-12 col-4 col-margin">
+                <div class="white-box primary-border-box big-padding-box">
+                    <h2 class="mt0"><img src="/bitrix/templates/modern_blue_ru/images/graduates.png" alt="Выпускникам"> Выпускникам</h2>
+
+                    <ul class="unstyled">
+                        <li><a href="#">Центр содействия занятости</a></li>
+                        <li><a href="#">Совет молодых ученых</a></li>
+                        <li><a href="#">Ассоциация выпускников</a></li>
+                    </ul>
+                    <a href="#" class="btn col-margin-top btn-long">Подробнее</a>
+                </div> <!-- .white-box primary-border-box big-padding-box -->
+            </div> <!-- .col col-mb-12 col-4 col-margin -->
+        </div> <!-- .content -->
+    </div>
+
+
+    <div class="container container-white container-mb70">
+        <div class="content">
+            <div class="col col-mb-12">
+                <div class="white-hero clearfix"><h1>Современный Государственный Университет</h1>
+                    <div class="hero-image">
+                        <img src="home.jpg" alt="">
+                    </div>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                        Он над имени парадигматическая журчит безорфографичный предложения, большого толку
+                        вопроса всеми возвращайся, его скатился силуэт пустился но вскоре дороге путь.</p>
+                    <a href="#" class="btn btn-long col-margin-top">Узнать больше</a>
+                </div> <!-- .hero-block clearfix -->
+            </div> <!-- .col col-mb-12 -->
+        </div> <!-- .content -->
+    </div> <!-- .container container-white container-mb70 -->
+
+
+    <div class="container">
+        <div class="content col-margin-bottom">
+            <div class="col col-mb-12 col-8">
+                <h2 class="h1 mb0">События</h2>
+            </div>
+            <div class="col col-mb-hide col-4 ta-right">
+                <a href="#" class="btn btn-link">Все события <i class="icon icon-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="col col-mb-12 col-margin-bottom">
+                <div class="white-box primary-border-box padding-box">
+                    <div class="content">
+                        <div class="col col-mb-12 col-6 col-dt-4">
+                            <h2 class="mb-block mt0"><a href="#">Списки рекомендованных к зачислению будут вывешены на сайт сегодня после 20.00</a></h2>
+                            <div class="big-image-col">
+                                <img src="/upload/iblock/427/4271827fe04b52e6d85c15b1648eef9d.jpg"
+                                     alt="Списки рекомендованных к зачислению будут вывешены на сайт сегодня после 20.00"
+                                     title="Списки рекомендованных к зачислению будут вывешены на сайт сегодня после 20.00">
+                            </div>
+                        </div>
+                        <div class="col col-mb-12 col-6 col-dt-8">
+                            <h2 class="mb-hide"><a href="#">Списки рекомендованных к зачислению будут вывешены на сайт сегодня после 20.00</a></h2>
+                            <p>28 июля в ВятГУ опубликованы полные пофамильные списки поступающих, успешно прошедших вступительные испытания, зачисление которых может рассматриваться приемной комиссией.</p>                        <a href="/about_the_university/notifies/478/" class="btn btn-long col-margin-top">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="col col-mb-12 col-4 col-margin-bottom">
+                <div class="white-box padding-box">
+                    <p>
+                        <img src="/upload/iblock/dac/dac01a8eb40395fcd40a5a41591d78d9.jpg"
+                             alt="Началось зачисление на бюджетные места"
+                             title="Началось зачисление на бюджетные места">
+                    </p>
+                    <p>
+                        <a href="#">Началось зачисление на бюджетные места</a>
+                    </p>
+                    <p class="fz14"><p>27 июля начался самый важный для абитуриентов этап приемной кампании – зачисление на бюджетные места: опубликован приказ о зачислении на выделенные места для  жителей Крыма.</p></p>
+                </div>
+            </div>
+            <div class="col col-mb-12 col-4 col-margin-bottom">
+                <div class="white-box padding-box">
+                    <p>
+                        <img src="/upload/iblock/87d/87d8f49d884a1e7f7319312d643af5bd.jpg"
+                             alt="Cписки рекомендованных к зачислению на бюджетные места во вторую волну"
+                             title="Cписки рекомендованных к зачислению на бюджетные места во вторую волну">
+                    </p>
+                    <p>
+                        <a href="#">Cписки рекомендованных к зачислению на бюджетные места во вторую волну</a>
+                    </p>
+                    <p class="fz14"><p>5 августа состоялось зачисление поступающих, включенных в списки лиц, рекомендованных к зачислению, и предоставивших в установленный срок оригинал аттестата (диплома).</p></p>
+                </div>
+            </div>
+            <div class="col col-mb-12 col-4 col-margin-bottom">
+                <div class="white-box padding-box">
+                    <p>
+                        <a href="#">Зачисление в магистратуру на бюджетные места</a>
+                    </p>
+                    <p class="fz14"><p>11 августа приемная комиссия Вятского государственного гуманитарного университета завершила процесс зачисления на бюджетные места: опубликованы приказы по всем программам магистратуры и заочной форме обучения бакалавриата.</p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-mb70">
+        <div class="content col-margin-bottom">
+            <div class="col col-mb-12 col-8">
+                <h2 class="h1 mb0">Новости</h2>
+            </div> <!-- .col col-mb-hide col-8 -->
+            <div class="col col-mb-hide col-4 ta-right">
+                <a href="#" class="btn btn-link">Все новости <i class="icon icon-arrow-right"></i></a>
+            </div> <!-- .col col-mb-hide col-4 ta-right -->
+        </div> <!-- .content col-margin-bottom -->
+
+        <div class="content">
+            <div class="col col-mb-12 col-12 col-dt-6">
+                <div class="white-box primary-border-box padding-box col-margin-bottom">
+                    <div class="news-item news-item-main">
+                        <div class="news-item-date">13 Августа, 2018</div>
+                        <div class="news-item-image">
+                            <h3 class="h2 mb-block"><a href="#">ПРЦДО ПГУ организовал стажировку госслужащих Пензенской области в Самаре</a></h3>
+                            <div class="big-image-col">
+                                <a href=""><img src="/upload/resize_cache/iblock/95d/500_250_2/95dd8eaa750a70205f3994ac0e9dae0e.jpg"
+                                                alt="ПРЦДО ПГУ организовал стажировку госслужащих Пензенской области в Самаре"
+                                                title="ПРЦДО ПГУ организовал стажировку госслужащих Пензенской области в Самаре">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-item-text">
+                            <h3 class="news-item-header mb-hide"><a href="#">ПРЦДО ПГУ организовал стажировку госслужащих Пензенской области в Самаре</a></h3>
+                            <p>
+                                В рамках организованной Региональным центром дистанционного обучения ПГУ программы среднесрочного обучения «Система государственного управления в субъектах РФ» 15 государственных гражданских служащих Пензенской области прошли стажировку в органах государственной власти Самарской области.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-mb-12 col-12 col-dt-6">
+                <div class="white-box padding-box col-margin-bottom">
+                    <div class="news-item">
+                        <div class="news-item-date">12 Августа, 2018</div>
+                        <div class="news-item-text">
+                            <h3 class="news-item-header"><a href="#">Мисс мира ИМС 2012!</a></h3>
+                            2 июня на турбазе Чистые Пруды в рамках международного фестиваля
+                            молодежной культуры «Юнифест» прошел конкурс «Мисс мира ИМС 2012».
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item-date">11 Августа, 2018</div>
+                        <div class="news-item-text">
+                            <h3 class="news-item-header"><a href="#">В Пензе состоялось торжественное открытие Технопарка «Яблочков»</a></h3>
+                            С целью создания благоприятных условий для развития малых и средних предприятий,
+                            занимающихся разработкой и внедрением научных разработок и инновационных проектов,
+                            в Пензе был создан Технопарк «Яблочков».&nbsp;&nbsp;Его создание осуществлялось
+                            в рамках реализации долгосрочной целевой программы «Развитие инновационной
+                            деятельности в Пензенской области &#40;2009-2014 годы&#41;».</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-item-date">09 Августа, 2018</div>
+                        <div class="news-item-text">
+                            <h3 class="news-item-header"><a href="#">Завершен чемпионат по футболу среди иностранных студентов</a></h3>
+                            29 мая 2012 года на спортивной арене Пензенского государственного университета
+                            завершился Чемпионат мира по футболу среди иностранных студентов вузов Пензы.<br/>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer-wrapper">
+    <footer class="container container-footer">
+
+        <div class="content footer-menu-content">
+            <div class="col col-mb-12 col-4">
+                <ul>
+                    <li class="col-margin-bottom">
+                        <div class="h4">О ВУЗе</div>
+                        <ul>
+                            <li><a href="#">Сведения об образовательном учреждении</a></li>
+                            <li><a href="#">Факультеты</a></li>
+                            <li><a href="#">Филиалы</a></li>
+                            <li><a href="#">Ученый совет</a></li>
+                            <li><a href="#">Структура</a></li>
+                            <li><a href="#">Руководство</a></li>
+                            <li><a href="#">Преподаватели и сотрудники</a></li>
+                            <li><a href="#">История</a></li>
+                            <li><a href="#">Устав</a></li>
+                            <li><a href="#">Библиотека</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Лицензии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Видеогалерея</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-mb-12 col-4">
+                <ul>
+                    <li class="col-margin-bottom">
+                        <div class="h4">Абитуриентам</div>
+                        <ul>
+                            <li><a href="#">Приемная комиссия</a></li>
+                            <li><a href="#">Документы и справки</a></li>
+                            <li><a href="#">Специальности и направления</a></li>
+                            <li><a href="#">Стоимость</a></li>
+                            <li><a href="#">Подготовительные курсы</a></li>
+                            <li><a href="#">Правила и условия приема</a></li>
+                            <li><a href="#">Общежитие</a></li>
+                            <li><a href="#">Студенческая жизнь</a></li>
+                            <li><a href="#">Фото-экскурсия</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-mb-12 col-4">
+                <ul>
+                    <li class="col-margin-bottom">
+                        <div class="h4">Студентам</div>
+                        <ul>
+                            <li><a href="#">Учебные материалы</a></li>
+                            <li><a href="#">Оплата обучения</a></li>
+                            <li><a href="#">Документы и справки</a></li>
+                            <li><a href="#">Студенческая жизнь</a></li>
+                            <li><a href="#">Научная жизнь</a></li>
+                            <li><a href="#">Спортивная жизнь</a></li>
+                            <li><a href="#">Социальная сфера</a></li>
+                            <li><a href="#">Международная деятельность</a></li>
+                            <li><a href="#">Иностранным студентам</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-mb-12 col-4">
+                <ul>
+                    <li class="col-margin-bottom">
+                        <div class="h4">Выпускникам</div>
+                        <ul>
+                            <li><a href="#">Центр содействия занятости</a></li>
+                            <li><a href="#">Совет молодых ученых</a></li>
+                            <li><a href="#">Ассоциация выпускников</a></li>
+                            <li><a href="#">Форумы</a></li>
+                            <li><a href="#">Отзывы выпускников</a></li>
+                            <li><a href="#">Семинары и тренинги</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="col col-mb-12 col-4">
+                &copy; Современный Государственный Университет, 2015<br>
+                <a href="#">Контакты</a><br>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+
+            <div class="col col-mb-12 col-4">
+                109544, Россия, г. Москва, бульвар Энтузиастов, дом 2<br>
+                +7 (495) 229-14-41<br>
+                9:00 до 20:00, Пн-Пт<br>
+            </div>
+
+            <div class="col col-mb-12 col-4">
+
+                <div class="social-networks">
+                    <a href="#vk" title="ВКонтакте" class="social-network"><i class="icon icon-social-vk"></i></a>
+                    <a href="#fb" title="Facebook" class="social-network"><i class="icon icon-social-fb"></i></a>
+                    <a href="#tw" title="Twitter" class="social-network"><i class="icon icon-social-tw"></i></a>
+                    <a href="#yt" title="YouTube" class="social-network"><i class="icon icon-social-yt"></i></a>
+                </div>
+                <div id="bx-composite-banner"></div>
+            </div>
+        </div>
+    </footer>
+</div> <!-- .footer-wrapper -->
+<div class="mobile-nav-wrapper">
+    <div class="mobile-nav">
+    </div>
+</div>
+</body>
+</html>
